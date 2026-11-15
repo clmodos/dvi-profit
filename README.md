@@ -2,7 +2,7 @@
 
 按“利润/小时”筛选采集与制造作业，一键自动挂机、补料、上架；另有快速升级tab，按金币/时间比值规划最省钱路线。
 
-**版本**：0.1.3
+**版本**：0.1.4
 
 **安装**：[点这里](https://raw.githubusercontent.com/clmodos/dvi-profit/main/dvi-profit.user.js)
 

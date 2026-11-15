@@ -2,7 +2,7 @@
 // @name         [DVI] 捡漏 + 自动练级
 // @name:zh-CN   [DVI] 捡漏 + 自动练级
 // @namespace    local.dvi.profit
-// @version      0.1.3
+// @version      0.1.4
 // @description  按“利润/小时”筛选采集与制造作业，一键自动挂机、补料、上架；另有快速升级tab，按金币/时间比值规划最省钱路线。
 // @description:en Pick gathering/crafting jobs by profit per hour, auto-run them, and plan the cheapest skill levelling route.
 // @author       clmodos
@@ -53,8 +53,8 @@ const PRICE_URL = 'https://deepveinidle.com/api/market/prices.json';
 const PRICE_TTL = 5 * 60 * 1000;     // 官方 5 分钟重建一次
 
 // 自动更新：油猴按头部的 @updateURL 自行比对；这里再做一层自检，方便看见/手动升级
-const UPDATE_META = 'https://raw.githubusercontent.com/clmodos/git-learn-yjl/master/dvi-userscripts/dvi-profit.meta.js';
-const UPDATE_PAGE = 'https://raw.githubusercontent.com/clmodos/git-learn-yjl/master/dvi-userscripts/dvi-profit.user.js';
+const UPDATE_META = 'https://raw.githubusercontent.com/clmodos/dvi-profit/main/dvi-profit.meta.js';
+const UPDATE_PAGE = 'https://raw.githubusercontent.com/clmodos/dvi-profit/main/dvi-profit.user.js';
 const UPDATE_KEY = 'dvi.profit.update.v1';
 const UPDATE_TTL = 6 * 60 * 60 * 1000;
 
@@ -1484,7 +1484,7 @@ function renderLevel() {
  * dvi-profit · main：引导、定时刷新、对外接口
  * ========================================================================= */
 
-const VERSION = '0.1.3';
+const VERSION = '0.1.4';
 VERSION_LOCAL = VERSION;
 
 async function boot() {
